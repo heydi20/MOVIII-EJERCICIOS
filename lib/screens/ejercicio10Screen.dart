@@ -84,10 +84,10 @@ String verificar(String edadStr, String nivelI, String promedioStr) {
 }*/
 
 void mensajeRespuesta(
-  BuildContext context,
-  TextEditingController edad,
-  TextEditingController nivelI,
-  TextEditingController promedio,
+   context,
+   edad,
+   nivelI,
+   promedio,
 ) {
   String resultado = verificar(edad.text, nivelI.text, promedio.text);
 
