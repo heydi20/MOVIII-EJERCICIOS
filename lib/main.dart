@@ -28,12 +28,14 @@ class Cuerpo extends StatelessWidget {
         title: Text("Ejercicios"),
         actions: [IconButton.outlined(onPressed: ()=>mensajeAutor(context), icon: Icon(Icons.propane_tank_outlined))],
       ),
-      body: Column(children: [
-        btnEjercicio10(context),
-        btnEjercicio11(context),
-        btnEjercicio12(context)
-
-      ],),
+      body: Center(
+        child: Column(children: [
+          btnEjercicio10(context),
+          btnEjercicio11(context),
+          btnEjercicio12(context)
+        
+        ],),
+      ),
     );
   }
 }

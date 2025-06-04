@@ -11,11 +11,11 @@ class Ejercicio10 extends StatelessWidget {
         children: [
           Text("PANTALLA EJERCICIO 10"),
           //BackButton(),//ICONO DE RETROCEDER
+          datos(context), //PARA CON UN BOTON RETROCEDER
           FilledButton(
             onPressed: () => Navigator.pop(context),
             child: Text("Retroceder"),
           ),
-          datos(context), //PARA CON UN BOTON RETROCEDER
         ],
       ),
     );
@@ -95,7 +95,7 @@ void mensajeRespuesta(
     context: context,
     builder:
         (context) => AlertDialog(
-          title: Text("Respuesta"),
+          title: Text("Confirmación"),
           content: Text(resultado),
           actions: [
             FilledButton(
